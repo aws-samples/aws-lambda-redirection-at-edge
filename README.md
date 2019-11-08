@@ -5,7 +5,7 @@ In this blog post, we will explore how you can leverage Lambda@Edge to offload U
 
 Also, the simple custom-build user interface discussed in this blog post makes URL redirection simple to setup and use, even for non-technical resources. For example, your marketing teams can now self-serve their request to setup vanity URLs for SEO (search engine optimisations) without being bottlenecked by the development teams.
 
-#Setup Instructions
+# Setup Instructions
 
 Pre-requisites:
 
@@ -13,7 +13,7 @@ Pre-requisites:
 2. AWS CLI setup and configuration
 3. Install make
 
-#Steps:
+# Steps:
 
 1. Set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-us-east-1 is created which holds the code assets for deployment.
 
