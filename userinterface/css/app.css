@@ -1,0 +1,157 @@
+.logo {
+    padding: 10px 0px 10px 15px;
+    width: 90%;
+    color: white;
+    font-weight: bolder !important;
+}
+
+.footer_logo {
+    width: 100px;
+    float: right;
+    padding-right: 15px;
+}
+
+.md-avatar {
+    background-color: #232f3e !important;
+    color: white;
+}
+
+#hide input[type=file] {
+    display: none;
+    margin: 10px;
+}
+
+#hide input[type=file]+label {
+    display: inline-block;
+    margin: 20px;
+    padding: 4px 32px;
+    background-color: #FFFFFF;
+    border: solid 1px #666F77;
+    border-radius: 6px;
+    color: #666F77;
+}
+
+#hide input[type=file]:active+label {
+    background-image: none;
+    background-color: #2D6C7A;
+    color: #FFFFFF;
+}
+
+.register-button {
+    background-color: #257acf !important;
+    background-image: -webkit-linear-gradient(top, #38d, #16b) !important;
+    background-image: linear-gradient(to bottom, #38d, #16b) !important;
+}
+
+.register-button-link {
+    position: absolute;
+    right: 10px;
+}
+
+.event-title {
+    font-variant: small-caps;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+}
+
+.events-table {
+    background-color: #444 !important;
+    color: white;
+}
+
+.description-text {
+    color: #444;
+}
+
+md-input-container {
+    margin: 0px !important;
+}
+
+.event-card {
+    padding: 20px 10px 5px 10px !important;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    background-color: #222;
+    position: absolute;
+}
+
+.search-bar * {
+    color: white !important;
+}
+
+label.ng-scope {
+    color: white !important;
+    font-size: 10px;
+}
+
+.search-bar input {
+    border-bottom-color: white;
+}
+
+.truncate {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ajax-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.ajax-loader-image {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.location-filter {
+    background-color: #222;
+    border: none;
+    bottom: -5px;
+    position: absolute;
+    right: 0px;
+    font-size: 15px;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+button.md-fab {
+    position: fixed !important;
+}
+
+.md-success {
+    background-color: darkcyan !important;
+    color: white !important;
+}
+
+.md-icon-button-rule {
+    min-width: 10px !important;
+}
+
+.btn_add {
+    right: 10px;
+    margin-top: 10px;
+    position: absolute !important;
+    background-color: transparent !important;
+}
+
+.btn_add.md-fab {
+    position: absolute !important;
+}
+
+.bg-light {
+  background-color: #232f3e !important;
+}

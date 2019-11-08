@@ -1,0 +1,13 @@
+{
+  "name": "UserInterface",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.2.0",
+    "angular": "^1.7.0",
+    "angular-animate": "^1.7.0",
+    "angular-route": "^1.7.0",
+    "bootstrap": "^4.1.1",
+    "moment": "^2.22.0"
+  }
+}

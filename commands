@@ -1,0 +1,6 @@
+#Command to build and package
+
+1. make build
+2. make package
+3. make copycodeww
+4. make copytemplateww

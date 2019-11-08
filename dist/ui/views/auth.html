@@ -1,0 +1,49 @@
+<!--
+ Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this
+ software and associated documentation files (the "Software"), to deal in the Software
+ without restriction, including without limitation the rights to use, copy, modify,
+ merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+/-->
+
+<div class="container" ng-cloak ng-controller="LoginController as lc">
+    <md-content layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
+        <md-card flex="flex" flex-gt-sm="50" flex-gt-md="33">
+            <md-toolbar>
+                <div class="md-toolbar-tools events-table">
+                    <h2><span>Login</span></h2>
+                </div>
+            </md-toolbar>
+            <md-card-content>
+                <div>
+                    <div layout="column" ng-cloak class="md-inline-form">
+                        <form name="Form" ng-submit="lc.login(lc.username,lc.password);">
+                            <md-input-container class="md-block">
+                                <label>Username</label>
+                                <input type="text" name="email" ng-model="lc.username" required />
+                            </md-input-container>
+                            <md-input-container class="md-block">
+                                <label>Password</label>
+                                <input type="password" name="password" ng-model="lc.password" required />
+                            </md-input-container>
+                            <div layout-gt-xs="row">
+                                <md-input-container class="md-inline" flex-gt-sm>
+                                    <input type="submit" class="md-raised md-primary register-button md-button" style="margin: 0px" value="Login" />
+                                </md-input-container>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
