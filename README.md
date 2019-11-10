@@ -15,11 +15,14 @@ Pre-requisites:
 
 ## Steps:
 
-1. Set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-us-east-1 is created which holds the code assets for deployment.
+1. Clone this repository
+git clone https://github.com/aws-samples/aws-lambda-redirection-at-edge
 
-```export CODE_BUCKET = example_bucket```
+2.  From a terminal move into this folder and set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-us-east-1 is created which holds the code assets for deployment.
 
-1. Run ```make deploy```
+```export CODE_BUCKET=example_bucket```
+
+3. Run ```make deploy```
 This would build the project and copy the assets into S3 bucket for deployment.You will also see the complete CloudFormation deployment URL when the execution completes.
 Copy & paste this URL in your browser to start deploying the CloudFormation template.
 

@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.4.11",
-    "generate-password": "^1.4.0",
+    "generate-password": "^1.4.2",
     "mime": "^2.3.1"
   },
   "description": "The utility function below is invoked as part of custom resource definition from CloudFormation template. This helper function is used to create the Cognito user credentials (https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#adminCreateUser-property) and deploy the user interface.",
