@@ -20,8 +20,8 @@ Pre-requisites:
 ```export CODE_BUCKET = example_bucket```
 
 1. Run ```make deploy```
-This would build the project and copy into code assets into S3 bucket for deployment.
-Then open the URL returned from above script in browser to deploy the CloudFormation template.
+This would build the project and copy the assets into S3 bucket for deployment.You will also see the complete CloudFormation deployment URL when the execution completes.
+Copy & paste this URL in your browser to start deploying the CloudFormation template.
 
 ## License
 
