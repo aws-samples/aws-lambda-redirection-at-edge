@@ -9,9 +9,9 @@ Also, the simple custom-build user interface discussed in this blog post makes U
 
 Pre-requisites:
 
-1. Install bower
-2. AWS CLI setup and configuration
-3. Install make
+1. Install [bower](https://bower.io/)
+2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) & set it up to connect to your AWS account
+3. Install ```make```
 
 ## Steps:
 
