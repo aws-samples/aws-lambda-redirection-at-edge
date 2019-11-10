@@ -5,26 +5,34 @@ In this blog post, we will explore how you can leverage Lambda@Edge to offload U
 
 Also, the simple custom-build user interface discussed in this blog post makes URL redirection simple to setup and use, even for non-technical resources. For example, your marketing teams can now self-serve their request to setup vanity URLs for SEO (search engine optimisations) without being bottlenecked by the development teams.
 
-## Setup Instructions
+## Setup Instructions on a Amazon Linux 2 EC2 instance
 
 Pre-requisites:
 
-1. Install [bower](https://bower.io/)
-2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) & set it up to connect to your AWS account
-3. Install ```make```
+1. Install [Docker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html) by following the instructions in the 'Installing Docker on Amazon Linux 2'
+
+2. Install git using command ```sudo yum install git -y```
+
+2. Install [Node.js & npm](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html)
+
+3. Install [bower](https://bower.io/)
+```npm install -g bower```
+
+4. Configure AWS CLI Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) & set it up to connect to your AWS account using the command ```aws configure```
 
 ## Steps:
 
-1. Clone this repository
-git clone https://github.com/aws-samples/aws-lambda-redirection-at-edge
+1. Clone this repository using command
+```git clone https://github.com/aws-samples/aws-lambda-redirection-at-edge```
 
 2.  From a terminal move into this folder and set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-us-east-1 is created which holds the code assets for deployment.
 
-```export CODE_BUCKET=example_bucket```
+```export CODE_BUCKET=YOUR BUCKET NAME```
 
 3. Run ```make deploy```
 This would build the project and copy the assets into S3 bucket for deployment.You will also see the complete CloudFormation deployment URL when the execution completes.
-Copy & paste this URL in your browser to start deploying the CloudFormation template.
+
+4. Copy & paste this URL in your browser to start deploying the CloudFormation template.
 
 ## License
 
