@@ -104,7 +104,7 @@ Resources:
       Handler: index.handler
       Role: !GetAtt OriginRequestFunctionRole.Arn
       Timeout: 5
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
 
   OriginRequestFunctionVersion:
     Type: "AWS::Lambda::Version"
@@ -161,7 +161,7 @@ Resources:
       Handler: index.handler
       Role: !GetAtt DeployFunctionRole.Arn
       Timeout: 300
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
 
   DeployArtifacts:
     Type: 'Custom::LambdaCallout'
