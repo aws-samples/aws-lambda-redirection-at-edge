@@ -7,8 +7,8 @@ image:
 	docker build --tag redirection:lambci12.x .
 
 build: image
-		docker run --rm --volume ${PWD}/lambda/origin-request-function:/build redirection:lambci8.10 /bin/bash -c "npm init -f -y; npm install node-rules@3.2.0 --save; npm install underscore@1.9.1 --save; npm install --only=prod"
-		docker run --rm --volume ${PWD}/lambda/deploy-function:/build redirection:lambci8.10 /bin/bash -c "npm init -f -y; npm install adm-zip@0.4.11 --save; npm install generate-password@1.4.2 --save; npm install mime@2.3.1 --save; npm install --only=prod"
+		docker run --rm --volume ${PWD}/lambda/origin-request-function:/build redirection:lambci12.x /bin/bash -c "npm init -f -y; npm install node-rules@6.2.0 --save; npm install underscore@1.9.1 --save; npm install --only=prod"
+		docker run --rm --volume ${PWD}/lambda/deploy-function:/build redirection:lambci12.x /bin/bash -c "npm init -f -y; npm install adm-zip@0.4.11 --save; npm install generate-password@1.4.2 --save; npm install mime@2.3.1 --save; npm install --only=prod"
 
 		cd userinterface;bower install angular@1.7.0
 		cd userinterface;bower install angular-animate@1.7.0

@@ -19,20 +19,22 @@ let intervalBetweenUpdates = 60;
 
 exports.handler = (event, context, callback) => {
   const request = event.Records[0].cf.request;
+  console.log("Request :%j",request);
   const uri = request.uri;
 
   const headers = request.headers;
   const querystring = request.querystring;
   const originHost = headers['host'][0].value;
-  const customHeaders = request.origin.s3.customHeaders;
+
+  const customHeaders = request.origin.s3?request.origin.s3.customHeaders:request.origin.custom.customHeaders;
   //read the bucket which holds the redirection rule
   const rulesBucket = customHeaders.rules_bucket[0].value;
   //read the redirection file name
   const rulesFile = customHeaders.rules_file[0].value;
 
   //clear the custom headers before sending to origin
-  delete request.origin.s3.customHeaders.rules_bucket;
-  delete request.origin.s3.customHeaders.rules_file;
+  // delete request.origin.s3.customHeaders.rules_bucket;
+  // delete request.origin.s3.customHeaders.rules_file;
 
   syncRedirectionRule(rulesBucket,rulesFile)
     .then(() => {
