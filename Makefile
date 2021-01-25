@@ -4,7 +4,7 @@ bucket = ${CODE_BUCKET}
 regions = us-east-1
 
 image:
-	docker build --tag redirection:lambci8.10 .
+	docker build --tag redirection:lambci12.x .
 
 build: image
 		docker run --rm --volume ${PWD}/lambda/origin-request-function:/build redirection:lambci8.10 /bin/bash -c "npm init -f -y; npm install node-rules@3.2.0 --save; npm install underscore@1.9.1 --save; npm install --only=prod"

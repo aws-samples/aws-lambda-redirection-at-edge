@@ -1,3 +1,3 @@
-FROM lambci/lambda:build-nodejs8.10
+FROM lambci/lambda:build-nodejs12.x
 
 WORKDIR /build
